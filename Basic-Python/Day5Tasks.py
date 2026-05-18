@@ -163,11 +163,100 @@
 # print(list(union_set))
 
 # Task 5
-lst1 = {15, 9, 10, 56, 23, 78, 5, 4, 9}
-lst2 = {9, 4, 5, 36, 47, 26, 10, 45, 87}
+# lst1 = {15, 9, 10, 56, 23, 78, 5, 4, 9}
+# lst2 = {9, 4, 5, 36, 47, 26, 10, 45, 87}
 
-list3=[item for item in lst1&lst2]
+# list3=[item for item in lst1&lst2]
 
-print(list3)
+# print(list3)
+
+# **************************** Dictionary ****************************************
+
+# Task 1
+# test_dict = {"CampusX" : [5, 7, 9, 4, 0], "is" : [6, 7, 4, 3, 3,2,1,0], "Best" : [9, 9, 6, 5, 5]}
+
+# new_dict={}
+# length=0
+# key_word=""
+
+# for key in test_dict:
+#     new_dict[key]=set(test_dict[key])
+
+# for keys in new_dict:
+#     if len(new_dict[keys])>length:
+#         length=len(new_dict[keys])
+#         key_word=keys
+
+# print(new_dict)
+# print(key_word)
+
+# Task 2
+# test_str = 'CampusX best for DS students.'
+# repl_dict = {"best" : "is the best channel", "DS" : "Data-Science"}
+
+# list_str=test_str.split()
+
+# for key,value in repl_dict.items():
+#     for i in range(len(list_str)):
+#         if list_str[i]==key:
+#             list_str[i]=value
+
+# new_str=" ".join(list_str)
+
+# print(list_str)
+# print(new_str)
+    
+# Task 3
+
+# test_list = ["DataScience", 3]
+# key_list = ["name", "id"]
+# final_list=[]
+
+# for i in range(0,len(test_list),len(key_list)):
+
+#     chunk=test_list[i:i+len(key_list)]
+
+#     new_dict=dict(zip(key_list,chunk))
+
+#     final_list.append(new_dict)
+
+# print(final_list)
+
+# Task 4
+# list1=[("akash", 10), ("gaurav", 12), ("anand", 14), ("suraj", 20), ("akhil", 25), ("ashish", 30)]
+# new_dict={}
+
+# for key,value in list1:
+
+#     new_dict[key]=[value]
+
+# print(new_dict)
+
+# Other way
+# list1=[('A', 1), ('B', 2), ('C', 3)]
+# new_dict={}
+# for items in list1:
+#     key=items[0]
+#     value=items[1]
+
+#     new_dict[key]=[value]
+
+# print(new_dict)
+
+# Task 5
+dict1={'c': [3], 'b': [12, 10], 'a': [19, 4]}
+new_dict={}
+# dict1={'c': [10, 34, 3]}
+
+for key in sorted(dict1.keys()):
+    new_dict[key]=sorted(dict1[key])
+
+print(new_dict)
+
+
+
+
+
+
 
 

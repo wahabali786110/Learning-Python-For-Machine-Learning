@@ -234,7 +234,7 @@ print("-" * 30)
 
 
 instructor_2 = Instructor()
-instructor_2.setName("Ali")
+instructor_2.setName("Mehran")
 instructor_2.setExperience(2)
 instructor_2.setFeedback(4.2)
 instructor_2.setTechnologySkills(["HTML", "CSS"])
@@ -248,7 +248,7 @@ print("-" * 30)
 
 
 instructor_3 = Instructor()
-instructor_3.setName("Sara")
+instructor_3.setName("Farman")
 instructor_3.setExperience(6)
 instructor_3.setFeedback(4.1) 
 instructor_3.setTechnologySkills(["Python", "Data Science"])

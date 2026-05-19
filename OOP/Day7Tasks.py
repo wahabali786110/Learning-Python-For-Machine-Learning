@@ -219,11 +219,43 @@ class Instructor:
 
 my_instructor=Instructor()
 
-my_instructor.setName("Wahab")
-my_instructor.setExperience(4)
-my_instructor.setFeedback(6)
-my_instructor.setTechnologySkills(['Python','FastAPI','Java'])
+instructor_1 = Instructor()
+instructor_1.setName("Wahab")
+instructor_1.setExperience(5)
+instructor_1.setFeedback(4.8)
+instructor_1.setTechnologySkills(["Python", "Java", "C++"])
 
-print(my_instructor.check_eligibility())
-print(my_instructor.allocate_course('Java'))
+print(f"Testing {instructor_1._Instructor__name} (Exp: 5, FB: 4.8, Skill: Python):")
+
+print("Eligible?", instructor_1.check_eligibility()) 
+print("Allocated Python?", instructor_1.allocate_course("Python"))
+print("-" * 30)
+
+
+
+instructor_2 = Instructor()
+instructor_2.setName("Ali")
+instructor_2.setExperience(2)
+instructor_2.setFeedback(4.2)
+instructor_2.setTechnologySkills(["HTML", "CSS"])
+
+print(f"Testing {instructor_2._Instructor__name} (Exp: 2, FB: 4.2, Skill: HTML/CSS):")
+
+print("Eligible?", instructor_2.check_eligibility()) 
+print("Allocated Python?", instructor_2.allocate_course("Python"))
+print("-" * 30)
+
+
+
+instructor_3 = Instructor()
+instructor_3.setName("Sara")
+instructor_3.setExperience(6)
+instructor_3.setFeedback(4.1) 
+instructor_3.setTechnologySkills(["Python", "Data Science"])
+
+print(f"Testing {instructor_3._Instructor__name} (Exp: 6, FB: 4.1, Skill: Python):")
+
+print("Eligible?", instructor_3.check_eligibility()) 
+print("Allocated Python?", instructor_3.allocate_course("Python"))
+print("-" * 30)
 

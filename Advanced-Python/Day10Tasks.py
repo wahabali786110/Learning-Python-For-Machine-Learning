@@ -54,13 +54,13 @@
 
 # How to dump your own class object to json file?(object will not be passed using this)
 # import json
-class Person:
-    def __init__(self,name,age,gender):
-        self.age=age
-        self.name=name
-        self.gender=gender
+# class Person:
+#     def __init__(self,name,age,gender):
+#         self.age=age
+#         self.name=name
+#         self.gender=gender
 
-person=Person('Wahab',22,'male')
+# person=Person('Wahab',22,'male')
 
 # def show(person):
 #     if isinstance(person,Person):
@@ -72,15 +72,19 @@ person=Person('Wahab',22,'male')
 # Deserialization process will be similiar
 
 # How to dump your own class object to json file?(object will be passed using this)
-import pickle
 
-with open('p.pkl','wb') as f:
-    pickle.dump(person,f)
+# import pickle
+# This will convert the object to binary stream.
+# with open('p.pkl','wb') as f:
+#     pickle.dump(person,f)
 
-with open('p.pkl','rb') as f:
-    q=pickle.load(f)
+# # This will convert the object to object hierarchy from binary stream
+# with open('p.pkl','rb') as f:
+#     q=pickle.load(f)
 
-print(q.name)
+# print(q.name)
+
+
 
 
 

@@ -108,20 +108,18 @@ z_line = np.linspace(0, 15, 1000)
 x_line = np.sin(z_line)
 y_line = np.cos(z_line)
 
-# 2. Set up the 3D Canvas
+
 fig = plt.figure(figsize=(8, 8))
-# The magic keyword that tells Matplotlib to think in 3D:
+
 ax = fig.add_subplot(projection='3d')
 
-# 3. Plot the Data
-# Notice we are passing three arrays now: x, y, and z!
+
 ax.plot(x_line, y_line, z_line, color='blue', linewidth=2)
 
-# 4. Make it look professional
+
 ax.set_title("3D Flight Path (Spiral)")
 ax.set_xlabel("X Axis")
 ax.set_ylabel("Y Axis")
 ax.set_zlabel("Z Axis (Altitude)")
 
-# 5. Reveal the masterpiece
 plt.show()

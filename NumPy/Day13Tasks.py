@@ -178,26 +178,27 @@ import numpy as np
 # print("Normalized Arr:\n",normalized_arr)
 
 # Task 19
-# def nth_largest(arr,n):
-#     if n>len(arr):
-#         raise ValueError("N cannot be larger than array size")
-#     else:
-#         sorted_array=np.sort(arr)
-        
-#         target_value=sorted_array[-n]
-#         return target_value
+# a=np.array([1,2,3])
+# print(a)
+# pattern_1=np.repeat(a,3)
+# pattern_2=np.tile(a,3)
 
-# arr1=np.array([12,34,40,7,1,0])
-# try:
-#     print(nth_largest(arr1,3))
-# except ValueError as e:
-#     print(e)
+# a=np.concatenate((pattern_1,pattern_2))
+# print(a)
 
 # Task 20
-a=np.array([1,2,3])
-print(a)
-pattern_1=np.repeat(a,3)
-pattern_2=np.tile(a,3)
+def nth_largest(arr,n):
+    if n>len(arr):
+        raise ValueError("N cannot be larger than array size")
+    else:
+        sorted_array=np.sort(arr)
+        
+        target_value=sorted_array[-n]
+        return target_value
 
-a=np.concatenate((pattern_1,pattern_2))
-print(a)
+arr1=np.array([12,34,40,7,1,0])
+try:
+    print(nth_largest(arr1,3))
+except ValueError as e:
+    print(e)
+

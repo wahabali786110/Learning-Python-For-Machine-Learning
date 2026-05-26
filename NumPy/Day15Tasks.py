@@ -121,3 +121,4 @@ if max_value==np.max(arr):
 difference=np.percentile(arr,51)-np.percentile(arr,50)
 
 print(difference)
+

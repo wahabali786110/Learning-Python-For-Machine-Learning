@@ -1,17 +1,16 @@
-# Learning Python for Machine Learning
+# Learning Python for ML
 
-Welcome to my repository dedicated to mastering Python specifically for Machine Learning and Artificial Intelligence. This project tracks my progress, code files, and foundational implementations as I build a strong core in AI development.
-
-## Repository Focus
-* **Python Fundamentals:** Core programming concepts tailored for data-driven applications.
-* **Object-Oriented Programming (OOP):** Structuring clean, reusable, and modular code for complex ML pipelines.
-* **Data Structures & Algorithms (DSA):** Optimizing problemcsolving skills and algorithm efficiency.
-* **Machine Learning Foundations:** Stepping into data manipulation, math essentials, and early model building.
+This repository documents my structured learning journey in mastering Python specifically for Machine Learning and AI Engineering. It contains hands on scripts and exercises progressing from core programming fundamentals to essential data manipulation libraries.
 
 ## Tech Stack
 * **Language:** Python
-* **Environment:** VS Code
-* **Version Control:** Git & GitHub
+* **Data Science Libraries:** NumPy, Pandas
 
----
-*Follow along as I transition concepts into practical, build-first AI engineering projects.*
+## Repository Structure
+The repository is divided into focused modules:
+
+* `/Basic-Python` — Core Python syntax, data structures, and control flow.
+* `/Advanced-Python` — Advanced programming concepts (decorators, generators, error handling).
+* `/OOP` — Object-Oriented Programming principles (classes, inheritance, polymorphism).
+* `/NumPy` — Numerical computing, array manipulation, and mathematical operations.
+* `/Pandas` — Data manipulation, cleaning, and  data analysis.
